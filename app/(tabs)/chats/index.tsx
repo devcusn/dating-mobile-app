@@ -2,7 +2,7 @@ import ChatListItem from "@/components/chat/ChatListItem";
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { chatItems } from "./constant";
 
-const ChatScreen = () => {
+const ChatsScreen = () => {
   return (
     <View style={{ flex: 1, backgroundColor: "#ffffff", padding: 4 }}>
       <Text style={styles.chatTitle}>Chat</Text>
@@ -14,7 +14,7 @@ const ChatScreen = () => {
     </View>
   );
 };
-export default ChatScreen;
+export default ChatsScreen;
 
 const styles = StyleSheet.create({
   chatTitle: {
