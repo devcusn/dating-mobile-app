@@ -5,7 +5,7 @@ import FontAwesome6 from "@expo/vector-icons/FontAwesome6";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import Header from "@/layout/Header";
-import { View } from "react-native";
+import ChatHeader from "@/layout/ChatHeader";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -51,10 +51,7 @@ export default function TabLayout() {
         name="chats/chat/index"
         options={{
           title: "",
-          header: () => <Header />,
-          tabBarIcon: ({ color, focused }) => (
-            <MaterialIcons name="person" size={24} color={color} />
-          ),
+          header: () => <ChatHeader />,
           tabBarButton: () => null,
         }}
       />
