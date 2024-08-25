@@ -1,11 +1,17 @@
 import React from "react";
 import { View, Text, SafeAreaView, StyleSheet, Image } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { router } from "expo-router";
 const ChatHeader = () => {
   return (
     <View style={styles.header_container}>
       <SafeAreaView style={styles.header}>
-        <Ionicons name="chevron-back" size={24} color="black" />
+        <Ionicons
+          onPress={() => router.push("/(tabs)/chats")}
+          name="chevron-back"
+          size={24}
+          color="black"
+        />
         <View style={styles.container}>
           <Image
             width={45}
