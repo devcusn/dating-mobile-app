@@ -10,13 +10,13 @@ import {
 
 const ChatScreen = () => {
   return (
-    <View style={styles.chat_container}>
+    <SafeAreaView style={styles.chat_container}>
       <ScrollView></ScrollView>
       <View style={styles.input_container}>
         <TextInput style={styles.input} placeholder="Type a message ..." />
         <Button title="Send" />
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -29,13 +29,14 @@ const styles = StyleSheet.create({
   },
   input_container: {
     flexDirection: "row",
-    borderWidth: 1,
-    borderRightWidth: 0,
-    borderLeftWidth: 0,
-    borderColor: "#bababa",
+    padding: 10,
   },
   input: {
     flex: 1,
     padding: 10,
+    width: "90%",
+    borderWidth: 1,
+    borderRadius: 25,
+    borderColor: "#bababa",
   },
 });

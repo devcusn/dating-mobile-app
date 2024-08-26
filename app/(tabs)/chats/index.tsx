@@ -1,5 +1,5 @@
 import ChatListItem from "@/components/chat/ChatListItem";
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Text, StyleSheet, ScrollView, SafeAreaView } from "react-native";
 import { chatItems } from "./constant";
 
 const ChatsScreen = () => {

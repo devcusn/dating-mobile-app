@@ -53,6 +53,7 @@ export default function TabLayout() {
           title: "",
           header: () => <ChatHeader />,
           tabBarButton: () => null,
+          tabBarStyle: { display: "none" },
         }}
       />
     </Tabs>
