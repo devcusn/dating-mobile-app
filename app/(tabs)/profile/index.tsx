@@ -4,7 +4,7 @@ import { router } from "expo-router";
 
 const ProfileScreen = () => {
   const handleEditProfile = () => {
-    router.push("/");
+    router.push("/(tabs)/profile/edit");
   };
 
   const handleSettings = () => {

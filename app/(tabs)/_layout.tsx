@@ -56,6 +56,13 @@ export default function TabLayout() {
           tabBarStyle: { display: "none" },
         }}
       />
+      <Tabs.Screen
+        name="profile/edit/index"
+        options={{
+          header: () => <Header />,
+          tabBarButton: () => null,
+        }}
+      />
     </Tabs>
   );
 }
