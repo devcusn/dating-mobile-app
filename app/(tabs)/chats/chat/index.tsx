@@ -1,3 +1,4 @@
+import MessageComponent from "@/components/chat/Message";
 import {
   View,
   StyleSheet,
@@ -11,7 +12,12 @@ import {
 const ChatScreen = () => {
   return (
     <SafeAreaView style={styles.chat_container}>
-      <ScrollView></ScrollView>
+      <ScrollView>
+        <MessageComponent message="Hi" isCurrentUser={false} />
+        <MessageComponent message="Hi, Tunc" isCurrentUser={true} />
+        <MessageComponent message="How is it going ?" isCurrentUser={true} />
+        <MessageComponent message="Not bad" isCurrentUser={false} />
+      </ScrollView>
       <View style={styles.input_container}>
         <TextInput style={styles.input} placeholder="Type a message ..." />
         <Button title="Send" />
